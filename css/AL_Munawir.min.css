@@ -37,12 +37,20 @@
 }.case p{
     color: #000000;
 }
-
+section.download {
+  background-image: url(../img/workers.png);
+   background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   section.download h2 {
     font-size: 50px;
     margin-top: 0; }
     section.download {
-  background-image: url(img/workers.png);
+  background-image: url(../img/workers.png);
    background-repeat: repeat;
   background-attachment: scroll;
   background-position: center center;
