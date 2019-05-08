@@ -59,7 +59,7 @@ h4 {
     margin-top: 30px;
     background: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    height: 400px;
+    height: 450px;
   }
   .ingredients{
     background-image: linear-gradient(315deg, #ffffff 0%, #82bc23 74%);
@@ -80,7 +80,7 @@ h4 {
   color: #fff !important;
 }
 .services h5{
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .ingredients .card-deck img{
   width: 20%;
@@ -90,6 +90,7 @@ h4 {
 .vehicles{
   width: 25% !important;
 }
+
 .box-item .icon {
   text-align: center;
   margin: 0 15px;
@@ -112,16 +113,11 @@ h4 {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 300px;
+  min-height: 100px;
   margin-top: 7.2rem;
   margin-left: auto;
   margin-right: auto;
   clear: both;
-}
-.about-how-content .step {
-  padding: 0 40px 1.5rem 60px;
-  position: relative;
-  min-height: 240px;
 }
 
 .about-how-content .step::before {
@@ -129,8 +125,8 @@ h4 {
   font-size: 1.5rem;
   content: attr(data-item);
   color: #ffffff;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
@@ -139,16 +135,12 @@ background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%);
   box-shadow: 0 0 0 15px #000 30%;
   z-index: 500;
   position: absolute;
-  top: -12px;
 }
-.content-left {
-  position: relative;
-  border-right:2px solid#39b54a;
-  padding-right: 20px;
-}
+
 
 .box-item {
   margin: 30px 0;
+  height: 50px;
 }
 
 .box-item .icon div {
@@ -166,13 +158,13 @@ background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%);
   margin-left: 25px;
 }
 .content-right .box-item:first-child {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .about-how-content .step {
-  padding: 0px 6px 12px 13px;;
+  padding: 0px 6px 12px 13px;
   position: relative;
-  min-height: 240px;
+  min-height: 80px;
 }
 
 .content-left .text {
@@ -198,7 +190,7 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
-  font-size: 11px;
+  font-size: 16px;
 }
   section#contact .section-heading {
     color: white; }
@@ -211,8 +203,12 @@ section#contact {
 }
 
 #contact img{
-  width: 16px;
+  width: 20px;
   margin: 0 5px;
+}
+.btn-submit, .btn-submit:hover{
+  background-color: #8bca25;
+  border-color: #8bca25;
 }
 
 
