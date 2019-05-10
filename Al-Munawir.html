@@ -409,6 +409,26 @@
     </section>
 
   <!-- Contact -->
+  
+  <?php 
+if(isset($_POST['submit'])){
+    $to = "1ahmedkaram1@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['name'];
+    $last_name = $_POST['name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -428,15 +448,16 @@
           <div class="col-lg-6">
             <form>
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter your email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control"  placeholder="Your name">
+                <input type="text" class="form-control" name="name"  placeholder="Your name">
               </div>
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your message"></textarea>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4" placeholder="Your message"></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+              <input type="submit" name="submit" value="Submit">
             </form>
           </div>
         </div>
