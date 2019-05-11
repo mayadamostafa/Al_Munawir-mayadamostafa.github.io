@@ -179,6 +179,45 @@ background-image: linear-gradient(315deg, #84fb95 0%, #cef576 74%);
 }
 #project{
   background-color: #8bca252b !important;
+  /* height: 500px; */
+}
+.black-overlay {
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 100%;
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
+  background: -o-linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6), transparent);
+  z-index: 100;
+  -webkit-transition: all 0.5s ease;
+}
+.project-item{
+  height: 300px;
+  cursor: pointer;
+}
+.project-item img{
+  z-index: 1;
+  width: 90%;
+  height: 300px;
+  position: absolute;
+  /* text-align: center; */
+}
+.carousel-item h5{
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  width: 100%;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  margin-top: -13px;
+  text-align: center;
+  color: #fff;
 }
 #client img{
   margin: 10px;
@@ -206,11 +245,39 @@ section#contact {
   width: 20px;
   margin: 0 5px;
 }
+#contact p{
+  line-height: 1.2;
+}
 .btn-submit, .btn-submit:hover{
   background-color: #8bca25;
   border-color: #8bca25;
 }
 
+#new .main-page{
+  position: absolute;
+  z-index: 1000;
+}
+#new .black-overlay{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 700px;
+}
+#new header img{
+  width: 100%;
+  height: 700px;
+  z-index: -100;
+}
+#new .carousel-item{
+  top: -60%;
+}
+#new .carousel-item h5{
+  top: -60%;
+}
+#new .carousel-item p {
+  line-height: 2;
+  top: -60%;
+}
 
 @media (min-width: 768px) {
   section {
