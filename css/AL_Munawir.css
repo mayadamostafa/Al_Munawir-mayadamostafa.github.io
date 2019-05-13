@@ -324,7 +324,7 @@ body {
   #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #8bca25; }
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 90%;
+    font-size: 85%;
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
