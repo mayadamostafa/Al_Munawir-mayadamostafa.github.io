@@ -9,7 +9,9 @@ body {
 }
 
 p {
-  line-height: 1.75; }
+  line-height: 1.75; 
+  text-align: left;
+}
 
 a {
   color: #85ef47; }
@@ -106,6 +108,9 @@ h4 {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.content-left p {
+  text-align: right !important;
 }
 
 
@@ -489,6 +494,9 @@ section#contact {
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
   }
+  .arabic p{
+    text-align: right;
+  }
   .arabic #mainNav .navbar-brand {
     color: #8bca25;
     font-family: 'Reem Kufi', sans-serif;
@@ -503,6 +511,9 @@ section#contact {
     color: #8bca25;
     font-family: 'Reem Kufi', sans-serif;
     font-size: 2.25rem;
+  }
+  .arabic .content-right p{
+    text-align: left !important;
   }
   .arabic #objectives .content{
     direction: ltr;
